@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-height: 836px;
+    max-width: 1366px;
+    margin: 0px auto;
+}
+
+.first {
+    color: #FFA300;
+    border: 1px solid #FFA300;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    height: fit-content;
+    width: 796px;
+    order: 1;
+    box-sizing: border-box;
+    padding: 40px;
+    
+}
+
+.second {
+    color: #9A9A9A;
+    border: 1px solid #9A9A9A;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    height: 100%;
+    width: 528px;
+    order: 3;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.third {
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    height: fit-content;
+    width: 796px;
+    order: 2;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+
+@media screen and (max-width: 376px) {
+    .container {
+        max-height: none;
+        max-width: 305px;
+    }
+
+    .first {
+        font-size: 14px;
+        width: 305px;
+        padding: 20px;
+        height: fit-content;
+        order: 1;
+    }
+
+    .second {
+        font-size: 14px;
+        width: 305px;
+        padding: 20px;
+        height: fit-content;
+        order: 2;
+    }
+    .third {
+        font-size: 14px;
+        width: 305px;
+        padding: 20px;
+        height: fit-content;
+        order: 3;
+    }
+    
+}
